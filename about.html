@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>about</title>
+</head>
+<body>
+	<header>
+    <nav class="burger-menu">
+      <a href="" class="burger-menu_button">
+        <span class="burger-menu_lines"></span>
+      </a>
+      <nav class="burger-menu_nav">
+        <a href="./index.html" class="burger-menu_link header__logo"> <img src="./img/header__logo.png" alt="Froggy Lesson"></a>
+        <a href="./english.html" class="burger-menu_link">Английский язык</a>
+        <a href="./german.html" class="burger-menu_link">Немецкий язык</a>
+        <a href="./french.html" class="burger-menu_link">Французский язык</a>
+        <a href="./corporate.html" class="burger-menu_link">Корпоративное обучение</a>
+        <a href="./allteachers.html" class="burger-menu_link">Преподаватели</a>
+        <a href="./about.html" class="burger-menu_link">О школе</a>
+        <a href="./feedback.html" class="burger-menu_link">Отзывы</a>
+        <a href="./contacts.html" class="burger-menu_link">Контакты</a>
+      </nav>
+      <div class="frog-logo">
+        <img class="text-froggy headShake" src="./img/froggy.png" alt="">
+        <img class="lesson lesson-animation " src="./img/lesson.png" alt="">
+        <img class="frog  frog-animation" src="./img/frog.png" alt="">
+        <img class="frog-bg frog-bg-animation" src="./img/frog-bg.png" alt="">
+      </div>
+      <div class="burger-menu_overlay"></div>
+    </nav>
+  </header>
+  <div class="popup__dropdown">
+    <div id="modalOne" class="modal">
+        <div class="modal-content">
+          <div class="main__bot__form__content contact-form">
+            <a class="popup-close"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px" height="25px" viewBox="0 0 121.31 122.876" enable-background="new 0 0 121.31 122.876" xml:space="preserve"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M90.914,5.296c6.927-7.034,18.188-7.065,25.154-0.068 c6.961,6.995,6.991,18.369,0.068,25.397L85.743,61.452l30.425,30.855c6.866,6.978,6.773,18.28-0.208,25.247 c-6.983,6.964-18.21,6.946-25.074-0.031L60.669,86.881L30.395,117.58c-6.927,7.034-18.188,7.065-25.154,0.068 c-6.961-6.995-6.992-18.369-0.068-25.397l30.393-30.827L5.142,30.568c-6.867-6.978-6.773-18.28,0.208-25.247 c6.983-6.963,18.21-6.946,25.074,0.031l30.217,30.643L90.914,5.296L90.914,5.296z"/></g></svg></a>
+            <h3 class="main__bot__form__title">
+              ЗАПИШИТЕСЬ<br>
+              НА БЕСПЛАТНЫЙ УРОК
+            </h3>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__bot">
+                <input class="form__frog__input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="form__frog__input" type="tel" name="tel" placeholder="Телефон"  required>
+                <input class="form__frog__input" type="email" name="email" placeholder="E-mail">
+              <p class="section-descr form__text">
+                выберите удобный способ для связи
+              </p>
+              <div class="form__checkboxs">
+                <label class="form__checkbox__lable" for="popup__Telegram">
+                  <input name="connectionType_top" type="radio" id="popup__Telegram" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  telegram
+                </label>
+                <label class="form__checkbox__lable" for="popup__whatsapp">
+                  <input name="connectionType_top" type="radio" id="popup__whatsapp" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  whatsapp
+                </label>
+                <label class="form__checkbox__lable form__checkbox__lable-coll" for="popup__coll-back">
+                  <input name="connectionType_top" type="radio" id="popup__coll-back" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  обратный звонок
+                </label>
+                <label class="form__checkbox__lable" for="popup__E-mail">
+                  <input name="connectionType_top" type="radio" id="popup__E-mail" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  E-mail
+                </label>
+              </div>
+              <button type="submit" class="btn-reset link__try">
+                Записаться
+              </button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+	<main>
+    <section class="about__hero">
+      <div class="container">
+        <div class="content">
+          <h2 class="about__hero__title">
+            Мы можем то,<br>  что не могут другие
+          </h2>
+          <p class="section-descr about__hero__descr">
+            Современные программы обучения на базе цифровой образовательной среды собственной разработки.
+          </p>
+          <p class="section-descr about__hero__descr">
+            За достаточно короткий срок мы стали одними из самых крупных и известных образовательных платформ во многих городах нашей страны и за рубежом.
+          </p>
+          <a href="#0" class="link__try popup-form-button">ПРОБНЫЙ УРОК</a>
+        </div>
+      </div>
+    </section>
+    <section class="about__info">
+      <div class="container">
+        <div class="content about__content">
+          <div class="about__info__item">
+            <p class="section-descr about__left__desr">
+              Мы отказываемся от учебников, делаем наши классы интерактивными и ещё более разговорными, а часть обучения будет проходить через нашу комплексную образовательную среду, доступную с любого компьютера и телефона.
+            </p>
+            <p class="section-descr about__left__desr">
+              Froggy lesson - одна из самых крупных игроков на рынке корпоративного обучения иностранному языку.
+            </p>
+            <p class="section-descr about__left__desr">
+              Благодаря этому у нас есть возможность нанимать лучших учителей, разрабатывать современные учебные пособия, внедрять передовые IT- решения и постоянно улучшать операционные процессы. Все для того, чтобы ваши занятия были максимально эффективными и доступными по цене.
+            </p>
+          </div>
+          <div class="about__info__item">
+            <ul class="list-reset about__info__right__items">
+              <li class="about__info__right__item">
+                <p class="section-descr about__info__right___descr-green">
+                  350 000
+                </p>
+                <p class="section-descr about__info__right___descr-dark">
+                  На рынке образовательных услуг
+                </p>
+              </li>
+              <li class="about__info__right__item">
+                <p class="section-descr about__info__right___descr-green">
+                  10 лет
+                </p>
+                <p class="section-descr about__info__right___descr-dark">
+                  На рынке образовательных услуг
+                </p>
+              </li>
+              <li class="about__info__right__item">
+                <p class="section-descr about__info__right___descr-green">
+                  >120
+                </p>
+                <p class="section-descr about__info__right___descr-dark">
+                  Сертифицированных преподавателей
+                </p>
+              </li>
+              <li class="about__info__right__item">
+                <p class="section-descr about__info__right___descr-green">
+                  3200
+                </p>
+                <p class="section-descr about__info__right___descr-dark">
+                  Компаний доверяют нам обучение своих сотруднико
+                </p>
+              </li>
+              <li class="about__info__right__item">
+                <p class="section-descr about__info__right___descr-green">
+                  85%
+                </p>
+                <p class="section-descr about__info__right___descr-dark">
+                  Учеников переходят на следующий уровень
+                </p>
+              </li>
+              <li class="about__info__right__item">
+                <p class="section-descr about__info__right___descr-green">
+                  95%
+                </p>
+                <p class="section-descr about__info__right___descr-dark">
+                  Наших учеников успешно проходят экзамены
+                </p>
+              </li>
+              <li class="about__info__right__item">
+                <p class="section-descr about__info__right___descr-green">
+                  >70%
+                </p>
+                <p class="section-descr about__info__right___descr-dark">
+                  Новых слушателей приходят к нам по рекомендации
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about__awords">
+      <div class="container">
+        <div class="content">
+          <h3 class="about__awords__title">
+            Мы в рейтингах лучших школ ИНОСТРАННОГО языка
+          </h3>
+          <ul class="list-reset about__awords__items">
+            <li class="about__awords__item">
+              <p class="section-decr about__awords__item-num">
+                1
+              </p>
+              <p class="section-descr about__awords__item__descr">
+                среди онлайн школ английского языка по версии интернет журнала top10english
+              </p>
+            </li>
+            <li class="about__awords__item">
+              <p class="section-decr about__awords__item-num">
+                2
+              </p>
+              <p class="section-descr about__awords__item__descr">
+                среди онлайн школ английского языка по версии интернет журнала study
+              </p>
+            </li>
+            <li class="about__awords__item">
+              <p class="section-decr about__awords__item-num">
+                1
+              </p>
+              <p class="section-descr about__awords__item__descr">
+                на премии "Эксперт Года SchoolRate Award"
+                2020 года
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="lang__comfort">
+      <div class="container">
+        <div class="content">
+          <h3 class="lang__comfort__title">
+            Почему нам доверяют
+          </h3>
+            <ul class="list-reset lang__comfort__items">
+              <li class="lang__comfort__item">
+                <p class="section-descr lang__comfort__item__argument  about__comfort__item__argument">
+                  Эффективность
+                </p>
+                <p class="section-descr lang__comfort__item__argument__descr">
+                  Мы помогаем превратить пассивные знания в активные и устойчивые навыки. С прохождением каждого уровня ваш словарный запас будет увеличиваться 2-3 раза
+                </p>
+              </li>
+              <li class="lang__comfort__item">
+                <p class="section-descr lang__comfort__item__argument  about__comfort__item__argument">
+                  Качество
+                </p>
+                <p class="section-descr lang__comfort__item__argument__descr">
+                  Мы проводим строгий отбор кадров. У всех педагогов высшее лингвистическое образование. Вас будут учить преподаватели ВУЗов, доценты, PhD из Америки
+                </p>
+              </li>
+              <li class="lang__comfort__item">
+                <p class="section-descr lang__comfort__item__argument  about__comfort__item__argument">
+                  Контроль
+                </p>
+                <p class="section-descr lang__comfort__item__argument__descr">
+                  Детальная статистика успеваемости всех сотрудников и эффективность затрат на обучение всегда под рукой в личном кабинете HR-специалиста
+                </p>
+              </li>
+              <li class="lang__comfort__item">
+                <p class="section-descr lang__comfort__item__argument  about__comfort__item__argument">
+                  Репутация
+                </p>
+                <p class="section-descr lang__comfort__item__argument__descr">
+                  Мы работаем на рынке образования уже 10 лет. Долгосрочно сотрудничаем с компаниями, обучая все новых и новых сотрудников
+                </p>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main__teachers">
+      <div class="container">
+        <div class="content teachers__content">
+          <h2 class="main__teachers__title">
+            НАШИ ПРЕПОДАВАТЕЛИ
+          </h2>
+          <p class="section-descr main__teachers__descr">
+            Прогресс, мотивация и сроки обучения на 50% зависят
+            от преподавателя. Не теряйте время, доверьтесь экспертам, которые прошли наш строгий отбор.
+          </p>
+          <ul class="list-reset main__teachers__items">
+            <li class="main__teachers__item">
+              <div class="main__teachers__item__text">
+                <p class="section-descr main__teachers__item__name">
+                  Алина Морозова
+                </p>
+                <p class="section-descr main__teachers__item__descr">
+                  Объясняет так просто, что даже ее бабушка шарит за Present Perfect
+                </p>
+              </div>
+            </li>
+            <li class="main__teachers__item">
+              <div class="main__teachers__item__text">
+                <p class="section-descr main__teachers__item__name">
+                  Елена Иванова
+                </p>
+                <p class="section-descr main__teachers__item__descr">
+                  Провела один из разговорных клубов в Москве так хорошо, что участники не хотели расходиться полтора часа                </p>
+              </div>
+            </li>
+            <li class="main__teachers__item">
+              <div class="main__teachers__item__text">
+                <p class="section-descr main__teachers__item__name">
+                  Дмитрий Семенов
+                </p>
+                <p class="section-descr main__teachers__item__descr">
+                  Готовит такие уроки на платформе, которые студенты хотят изучать снова и снова                </p>
+              </div>
+            </li>
+          </ul>
+          <a href="./allteachers.html" class="link__try">ПОСМОТРЕТЬ ВСЕХ</a>
+        </div>
+      </div>
+    </section>
+    <section class="main__feedback">
+      <div class="container">
+        <div class="content">
+          <h2 class="main__feedback__title">
+            ОТЗЫВЫ НАШИХ УЧЕНИКОВ
+          </h2>
+            <ul class="list-reset main__feedback__items">
+              <li class="main__feedback__item">
+                <video class="vid">
+
+                </video>
+              </li>
+              <li class="main__feedback__item">
+                <video class="vid">
+
+                </video>
+              </li>
+              <li class="main__feedback__item">
+                <video class="vid">
+
+                </video>
+              </li>
+              <li class="main__feedback__item">
+                <video class="vid">
+
+                </video>
+              </li>
+            </ul>
+            <a href="./feedback.html" class="link__try">БОЛЬШЕ ОТЗЫВОВ</a>
+        </div>
+      </div>
+    </section>
+    <section class="main__bot__form about__bot__form">
+      <div class="container">
+        <div class="content">
+          <div class="main__bot__form__content">
+            <h3 class="main__bot__form__title">
+              ЗАПИШИТЕСЬ<br>
+              НА БЕСПЛАТНЫЙ УРОК
+            </h3>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__bot">
+                <input class="form__frog__input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="form__frog__input" type="tel" name="tel" placeholder="Телефон"  required>
+                <input class="form__frog__input" type="email" name="email" placeholder="E-mail">
+              <p class="section-descr form__text">
+                выберите удобный способ для связи
+              </p>
+              <div class="form__checkboxs">
+                <label class="form__checkbox__lable" for="bot__Telegram">
+                  <input name="connectionType_top" type="radio" id="bot__Telegram" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  telegram
+                </label>
+                <label class="form__checkbox__lable" for="bot__whatsapp">
+                  <input name="connectionType_top" type="radio" id="bot__whatsapp" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  whatsapp
+                </label>
+                <label class="form__checkbox__lable form__checkbox__lable-coll" for="bot__coll-back">
+                  <input name="connectionType_top" type="radio" id="bot__coll-back" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  обратный звонок
+                </label>
+                <label class="form__checkbox__lable" for="bot__E-mail">
+                  <input name="connectionType_top" type="radio" id="bot__E-mail" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  E-mail
+                </label>
+              </div>
+              <button type="submit" class="btn-reset link__try">
+                Записаться
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+	</main>
+	<footer class="footer">
+    <div class="container">
+      <div class="content">
+        <nav class="footer__nav">
+          <div class="footer__item footer__left">
+            <img class="footer__logo" src="./img/footer__logo.png" alt="Логотип Froggy Lesson">
+            <a href="#0" class="footer__left__link ">
+              Договор-оферта
+            </a>
+            <a href="#0" class="footer__left__link footer__left__link-two">
+              Политика конфиденциальности
+            </a>
+            <p class="section-descr footer-copy">
+              2022 © all rights reserved
+            </p>
+          </div>
+          <div class="footer__item footer__center">
+            <ul class="list-reset footer__nav__items">
+              <li class="footer__nav__item">
+                <a href="./english.html" class="footer__nav__link">
+                  Английский язык
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="./german.html" class="footer__nav__link">
+                  Немецкий язык
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="./french.html" class="footer__nav__link">
+                  Французский язык
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="./corporate.html" class="footer__nav__link">
+                  Корпоративное обучение
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item footer__right">
+            <ul class="list-reset footer__nav__items">
+              <li class="footer__nav__item">
+                <a href="./allteachers.html" class="footer__nav__link">
+                  Преподаватели
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="./about.html" class="footer__nav__link">
+                  О школе
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="./feedback.html" class="footer__nav__link">
+                  Отзывы
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="./contacts.html" class="footer__nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./js/burger.js"></script>
+  <script src="./js/video-player.js"></script>
+  <script src="./js/popup.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+     AOS.init({
+    disable: function() {
+      var maxWidth = 1024;
+      return window.innerWidth < maxWidth;
+    }
+  });
+  </script>
+</body>
+</html>

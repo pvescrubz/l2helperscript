@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style-quiz-app.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>test</title>
+</head>
+<body>
+  <header>
+    <nav class="burger-menu">
+      <a href="" class="burger-menu_button">
+        <span class="burger-menu_lines"></span>
+      </a>
+      <nav class="burger-menu_nav">
+        <a href="#" class="burger-menu_link header__logo"> <img src="./img/header__logo.png" alt="Froggy Lesson"></a>
+        <a href="#" class="burger-menu_link">Английский язык</a>
+        <a href="#0" class="burger-menu_link">Немецкий язык</a>
+        <a href="#0" class="burger-menu_link">Французский язык</a>
+        <a href="#0" class="burger-menu_link">Корпоративное обучение</a>
+        <a href="#0" class="burger-menu_link">Преподаватели</a>
+        <a href="#0" class="burger-menu_link">О школе</a>
+        <a href="#0" class="burger-menu_link">Отзывы</a>
+        <a href="#0" class="burger-menu_link">Контакты</a>
+      </nav>
+      <div class="burger-menu_overlay"></div>
+    </nav>
+  </header>
+  <div class="popup__dropdown">
+    <div id="modalOne" class="modal">
+        <div class="modal-content">
+          <div class="main__bot__form__content contact-form">
+            <a class="popup-close"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px" height="25px" viewBox="0 0 121.31 122.876" enable-background="new 0 0 121.31 122.876" xml:space="preserve"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M90.914,5.296c6.927-7.034,18.188-7.065,25.154-0.068 c6.961,6.995,6.991,18.369,0.068,25.397L85.743,61.452l30.425,30.855c6.866,6.978,6.773,18.28-0.208,25.247 c-6.983,6.964-18.21,6.946-25.074-0.031L60.669,86.881L30.395,117.58c-6.927,7.034-18.188,7.065-25.154,0.068 c-6.961-6.995-6.992-18.369-0.068-25.397l30.393-30.827L5.142,30.568c-6.867-6.978-6.773-18.28,0.208-25.247 c6.983-6.963,18.21-6.946,25.074,0.031l30.217,30.643L90.914,5.296L90.914,5.296z"/></g></svg></a>
+            <h3 class="main__bot__form__title">
+              ЗАПИШИТЕСЬ<br>
+              НА БЕСПЛАТНЫЙ УРОК
+            </h3>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__bot">
+                <input class="form__frog__input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="form__frog__input" type="tel" name="tel" placeholder="Телефон"  required>
+                <input class="form__frog__input" type="email" name="email" placeholder="E-mail">
+              <p class="section-descr form__text">
+                выберите удобный способ для связи
+              </p>
+              <div class="form__checkboxs">
+                <label class="form__checkbox__lable" for="popup__Telegram">
+                  <input name="connectionType_top" type="radio" id="popup__Telegram" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  telegram
+                </label>
+                <label class="form__checkbox__lable" for="popup__whatsapp">
+                  <input name="connectionType_top" type="radio" id="popup__whatsapp" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  whatsapp
+                </label>
+                <label class="form__checkbox__lable form__checkbox__lable-coll" for="popup__coll-back">
+                  <input name="connectionType_top" type="radio" id="popup__coll-back" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  обратный звонок
+                </label>
+                <label class="form__checkbox__lable" for="popup__E-mail">
+                  <input name="connectionType_top" type="radio" id="popup__E-mail" class="checkbox-real" required>
+                  <span class="checkbox-custom"></span>
+                  E-mail
+                </label>
+              </div>
+              <button type="submit" class="btn-reset link__try">
+                Записаться
+              </button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  <main>
+    <section class="test-section">
+      <div class="container rtest-section-container">
+          <div class="content test-section-content">
+              <div class="test-section-description">
+                  <h2 class="section-title test-section-title">Пройди Тест и Узнай Свой<br> Уровень Языка </h2>
+                  <p class="test-section-text">Тест составлен в соответствии с международной классификацией CEFR.</p>
+                  <div id="progress_bar"><div id="progress_in"></div></div>
+                </div>
+              <div class="test-window">
+                  <div class="jsq-container" id="jsq_box">
+                      <div class="jsq_header" style="display:none;">
+                          <div class="jsq_head_text"></div>
+                      </div>
+                      <div class="jsq_body">
+                          <div id="jsq_ifo_box">
+                              <div class="jsq_info_footer">
+                                  <button class="jsq_btn" id="jsq_start">Начать</button>
+                              </div>
+                          </div>
+                          <div class="jsq_main_content" style="display: none;">
+                              <h1 id="jsq_question"></h1>
+                              <div id="jsq_code_box"><pre class="language-js"><code></code></pre></div>
+                              <div id="jsq_options"></div>
+                          </div>
+                      </div>
+                      <div class="jsq_footer" style="display: none;">
+                          <div id="jsq_total">1 из 5 Вопросов</div>
+                          <button class="jsq_btn" id="next_question">Следующий вопрос</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="content">
+        <nav class="footer__nav">
+          <div class="footer__item footer__left">
+            <img class="footer__logo" src="./img/footer__logo.png" alt="Логотип Froggy Lesson">
+            <a href="#0" class="footer__left__link ">
+              Договор-оферта
+            </a>
+            <a href="#0" class="footer__left__link footer__left__link-two">
+              Политика конфиденциальности
+            </a>
+            <p class="section-descr footer-copy">
+              2022 © all rights reserved
+            </p>
+          </div>
+          <div class="footer__item footer__center">
+            <ul class="list-reset footer__nav__items">
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  Английский язык
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  Немецкий язык
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  Французский язык
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  Корпоративное обучение
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item footer__right">
+            <ul class="list-reset footer__nav__items">
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  Преподаватели
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  О школе
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  Отзывы
+                </a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#0" class="footer__nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/jquery-2.1.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.28.0,npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./js/burger.js"></script>
+  <script src="./js/questions.js"></script>
+	<script src="./js/test.js"></script>
+  <script src="./js/popup.js"></script>
+</body>
+</html>
