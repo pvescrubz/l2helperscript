@@ -12,8 +12,15 @@ html {
   --bgFormFrog: #EBEBEB;
 }
 
+<<<<<<< dima
 /* 1231234124 */
+=======
+
+/* //test  */
+>>>>>>> master
 *,
+
+
 *::before,
 *::after {
 	box-sizing: inherit;
